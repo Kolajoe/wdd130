@@ -1,9 +1,9 @@
-/* CSS Variables */
+
 :root {
-  --primary-color: #2c3e50;      /* dark slate blue */
-  --secondary-color: #e67e22;    /* orange */
-  --accent1-color: #3498db;      /* bright blue */
-  --accent2-color: #f1c40f;      /* golden yellow */
+  --primary-color: #2c3e50;      
+  --secondary-color: #e67e22;    
+  --accent1-color: #3498db;      
+  --accent2-color: #f1c40f;      
   --heading-font: "Georgia", "Times New Roman", serif;
   --body-font: "Arial", "Helvetica", sans-serif;
 }
@@ -17,6 +17,7 @@
 body {
   font-family: var(--body-font);
   color: var(--primary-color);
+  color: var(--accent1-color);
 }
 
 header, main, footer {
