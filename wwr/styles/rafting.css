@@ -16,6 +16,7 @@
 body {
   font-family: var(--body-font);
   color: var(--primary-color);
+  background-color: #ffffff;
 }
 
 h1, h2 {
@@ -30,6 +31,7 @@ header {
   gap: 2rem;
   padding: 16px 2rem;
   border-bottom: 3px solid var(--secondary-color);
+  background-color: #ffffff;
 }
 
 header img {
@@ -87,7 +89,7 @@ nav a:hover {
   bottom: 40px;
   left: 20px;
   right: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(44, 62, 80, 0.7);
   color: #ffffff;
   padding: 16px;
   border-radius: 8px;
@@ -178,6 +180,7 @@ figure {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  border: 1px solid var(--accent2-color);
 }
 
 figure:hover {
@@ -198,6 +201,7 @@ figcaption {
   color: var(--primary-color);
   background-color: #f9f9f9;
   font-size: 0.9rem;
+  border-top: 2px solid var(--accent1-color);
 }
 
 footer {
@@ -207,12 +211,13 @@ footer {
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid var(--accent2-color);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 footer p {
   margin: 0;
   padding: 0;
+  color: var(--primary-color);
 }
 
 .socialmedia {
@@ -233,6 +238,37 @@ footer p {
 .socialmedia img {
   width: 32px;
   height: 32px;
+}
+
+a {
+  color: var(--accent1-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+button, 
+.cta-button {
+  background-color: var(--accent1-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent1-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
 
 @media screen and (max-width: 768px) {
@@ -292,6 +328,7 @@ footer p {
   }
 }
 
+/* Mobile view */
 @media screen and (max-width: 480px) {
   .adventures-grid {
     grid-template-columns: 1fr;
